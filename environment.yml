@@ -1,0 +1,32 @@
+# conda install -n base -c conda-forge mamba (depuis conda prompt pour les utilisateurs de windows)
+# mamba env create -f environment.yml
+# conda activate jupyter-hub-env
+# jupyter lab
+
+name: jupyter-hub-env
+
+channels:
+- conda-forge
+- defaults
+
+dependencies:
+- python=3.7
+- pip
+
+### git
+- git
+
+
+### Commun datascience
+- jupyter
+- jupyterlab
+- pandas
+- numpy
+- scipy
+- seaborn
+- scikit-learn
+- statsmodels
+- matplotlib
+
+
+
